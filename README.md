@@ -26,7 +26,7 @@ Alpha is built on and tested with:
 * Postgresql 9.1
 * Apache2
 
-# Installation Instructions:
+## Installation Instructions:
 
 * Download or clone Imager into your webroot and configure Apache or your web hosting appropriately
 
@@ -34,7 +34,7 @@ Alpha is built on and tested with:
 
 * Point your browser to your imager URL and follow the onscreen instructions to connect to your database and create the first user.
 
-# Settings:
+## Settings:
 
 A GUI for settings is on the list for BETA.
 
