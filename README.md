@@ -35,6 +35,7 @@ Installation Instructions:
 -Point your browser to your imager URL and follow the onscreen instructions to connect to your database and create the first user.
 
 Settings:
+=========
 
 A GUI for settings is on the list for BETA.
 
