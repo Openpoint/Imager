@@ -1,0 +1,199 @@
+body{
+color:#404040;
+}
+strong {
+font-weight:bold;
+}
+fieldset{
+margin:20px 0;
+}
+#im_modal{
+position:absolute;
+left:0;
+width:100%;
+display:none;
+opacity:0;
+text-align:center;
+}
+#im_mask{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:1000000000000000;
+background:rgba(0,0,0,.75);
+display:none;
+}
+
+#im_modal .outer{
+position:relative;
+display:inline-block;
+z-index:10000000000000001;
+}
+#im_modal .infobox{
+background:white;
+display:inline-block;
+padding:40px 40px 0 40px;
+border-radius:8px;
+border-top-right-radius:12px;
+border:3px solid #6AAC6B;
+position:relative;
+color:#6AAC6B;
+line-height:1.5em;
+max-width:85%;
+}
+#im_modal .message{
+line-height:1.8em;
+}
+#mod_close{
+position:absolute;
+top:-3px;
+right:-3px;
+color:#6AAC6B;
+cursor:pointer;
+font-size:25px;
+z-index:10;
+}
+#mod_close:before{
+margin:0;
+
+}
+#mod_error{
+color:orange;
+}
+#mod_error, #mod_mess{
+max-width:350px;
+}
+#mod_spinner{
+
+height:40px;
+padding-top:10px;
+}
+#mod_spinner .spin_inner{
+display:none;
+}
+.pointer {
+cursor:pointer;
+}
+#im_static{
+margin:0 auto;
+margin-top:40px;
+}
+#im_modal .infobox, #im_static{
+max-width:550px;
+}
+#im_static.im_users {
+max-width:none;
+}
+#im_modal input, #im_modal textarea, #im_static input, #im_static textarea{
+border-radius:0;
+border:1px solid #6AAC6B;
+background:#FBFFFB; 
+width:100%;
+max-width:100%;
+margin:5px 0;
+padding:5px;
+display:inline-block;
+}
+.im_users input, .im_users textarea{
+width:auto!important;
+}
+.im_inline {
+float:left;
+}
+#im_modal .error, #im_static .error{
+border:1px solid orange;
+}
+#im_modal input[type='submit'], #im_static input[type='submit'] {
+background:#6AAC6B;
+color:white;
+padding:4px 10px;
+cursor:pointer;
+width:auto;
+display:inline-block;
+}
+#im_modal textarea, #im_static textarea{
+min-width:100%;
+min-height:100px;
+max-width:540px;
+}
+.im_ftitle{
+color:#6AAC6B;
+}
+.im_text{
+margin:10px 0;
+}
+#im_messages {
+margin:20px auto;
+max-width: 350px;
+}
+#im_roles {
+width:20%;
+float:left;
+margin-top:55px;
+}
+#im_roles .inner{
+margin:0 10px;
+border:1px solid #6AAC6B;
+border-top:none;
+}
+#im_roles label{
+padding:5px;
+}
+#im_roles p{
+padding:10px 5px;
+}
+.im_users {
+width:80%;
+float:left;
+}
+.im_users .inner{
+padding:0 10px;
+}
+*[id*='im_'] label, *[class*='im_'] label {
+text-transform:uppercase;
+color:#6AAC6B;
+display:block;
+
+border-bottom:1px solid #6AAC6B;
+border-top:1px solid #6AAC6B;
+}
+#userroles table{
+width:100%;
+text-align:left;
+}
+#userroles tr{
+border-bottom:1px solid #BFBFBF;
+}
+
+#userroles th{
+color:#6AAC6B;
+text-transform:uppercase;
+position:relative;
+cursor:pointer;
+padding-bottom:20px!important;
+border-bottom:1px solid #6AAC6B;
+}
+#userroles th span{
+position:absolute;
+top:4px;
+margin-left:2px;
+}
+#userroles td,#userroles th{
+padding:5px 0;
+}
+.im_useractions span{
+display:inline-block;
+font-size:.85em;
+cursor:pointer;
+color:#6AAC6B;
+margin-right:10px;
+padding:5px 0;
+}
+.im_uname {
+text-transform:uppercase;
+}
+.im_caps{
+text-transform:uppercase;
+}

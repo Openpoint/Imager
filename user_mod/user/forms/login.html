@@ -1,0 +1,32 @@
+<!--
+/*
+ * UserMod - An ajax modal based user management system
+ * Copyright (C) 2014  Michael Jonker
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * michael@piquant.ie
+ * Piquant Media
+ * http://www.piquant.ie
+ * */ 
+  
+ /*
+  * Login form
+  * 
+  * */
+-->
+<form name="login" id="login" action="/user_mod/user/users.php" method="post">
+	<input type="text" name="username" placeholder="Username or Email" required><br>
+	<input type="password" name="password" placeholder="Enter your password" required><br>
+	<input type="submit" value="Login">	
+</form>
+<div class='pointer im_text' onclick='users.resetp()'>I forgot my password...</div>

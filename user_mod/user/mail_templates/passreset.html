@@ -1,0 +1,129 @@
+<?php
+/*
+ * UserMod - An ajax modal based user management system
+ * Copyright (C) 2014  Michael Jonker
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * michael@piquant.ie
+ * Piquant Media
+ * http://www.piquant.ie
+ * */ 
+  
+ /*
+  * Template for a password reset email
+  * 
+  * */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+
+			#outlook a {
+				padding:0;
+			}
+			body{
+				width:100% !important; 
+				-webkit-text-size-adjust:100%; 
+				-ms-text-size-adjust:100%; 
+				margin:0; 
+				padding:0;
+			} 
+
+			.ExternalClass {
+				width:100%;
+			}
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+				line-height: 100%;
+			}
+
+			#bodywrap {
+				font-family:helvetica,arial,sans-serif;
+				margin:0; 
+				padding:0; 
+				width:100% !important; 
+				line-height: 100% !important;
+				overflow:hidden;
+			}
+
+			img {
+				outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;
+			} 
+			a img {
+				border:none;
+			} 
+			.image_fix {
+				display:block;
+			}
+
+			#header{
+				width:100%;
+				padding:10px 0;
+				background:#6AAC6B;
+				color:white;
+				font-weight:bold	
+			}
+			#header img:hover{
+				opacity:.85;
+			}
+			#header a{
+				display:inline-block;
+			}
+			.inner{
+				padding:0 20px;
+				max-width:600px;
+				margin:0 auto;
+			}
+			#body {
+				padding:20px 0 40px 0;
+				border-bottom:1px solid #6AAC6B;
+			}
+			#footer{
+				text-align:center;
+				font-size:.85em;
+				padding:10px 0;
+			}
+			#footer a{
+				color:#6AAC6B;
+				text-decoration:none;
+			}
+			#footer a:hover{
+				color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='bodywrap'>
+			<div id='header'>
+				<div class='inner'>
+					<a href=':url'>
+						<img class="image_fix" alt="IMAGER" src="data:image/png;base64,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" />	
+					</a>			
+				</div>		
+			</div>
+			<div class='inner'>
+				<div id='body'>
+					A request has been made to reset the password for :username. Please click <a href=':tokenpath'>here</a> or cut and paste the following link into your browser:<br><br><div>:tokenpath</div><br><br>
+					If you did not request a password reset, you can safely ignore this message.
+				</div>
+				<div id='footer'>
+					Imager is a <a href='http://piquant.ie'>PIQUANT</a> project
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+

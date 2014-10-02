@@ -1,0 +1,12 @@
+
+.icon-git-squared:before { content: '\e800'; } /* '' */
+.icon-git:before { content: '\e801'; } /* '' */
+.icon-github-squared:before { content: '\e802'; } /* '' */
+.icon-menu:before { content: '\e803'; } /* '' */
+.icon-menu-outline:before { content: '\e804'; } /* '' */
+.icon-help-circled:before { content: '\e805'; } /* '' */
+.icon-home-circled:before { content: '\e806'; } /* '' */
+.icon-angle-circled-left:before { content: '\e807'; } /* '' */
+.icon-angle-circled-right:before { content: '\e808'; } /* '' */
+.icon-shuffle:before { content: '\e809'; } /* '' */
+.icon-cancel-circled:before { content: '\e80a'; } /* '' */

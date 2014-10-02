@@ -1,0 +1,394 @@
+/* http://www.piquant.ie 
+   License: none (public domain)
+*/
+
+body{
+background:#EFEFEF;
+width:100%;
+position:relative;
+font-family:arial, sans-serif;
+}
+body>a:last-of-type{
+opacity:.3;
+}
+body>a:last-of-type:hover{
+opacity:1;
+}
+#header{
+background:#6AAC6B;
+color:white;
+text-align:center;
+padding-bottom:5px;
+}
+#front{
+padding-bottom:40px;
+}
+#fetching{
+text-align:center;
+color:orange;
+opacity:.85;
+margin:20px 0;
+position:fixed;
+width:100%;
+left:0;
+
+}
+.showbar #fetching{
+top:85px;
+}
+#front.showbar #fetching {
+top:120px;
+}
+.nobar #fetching{
+top:55px;
+}
+#front.nobar #fetching {
+top:90px;
+}
+#fetching .count{
+font-weight:bold;
+font-size:1.5em;
+line-height:1.5em;
+}
+#header a{
+font-size:2em;
+line-height:2em;
+font-family:pacificoregular;
+color:white;
+text-decoration:none;
+}
+#back #header {
+line-height:1.5em;
+text-align:left;
+}
+#header .hlogo a:hover{
+opacity:.8;
+}
+#back #header .inner{
+font-size:.8em;
+max-width:90%;
+margin:0 auto;
+}
+.centerdiv{
+margin:0 auto;
+max-width:90%;
+}
+#controls {
+margin-bottom:40px;
+text-align:center;
+width:100%;
+position:relative;
+z-index:18675309;
+
+}
+
+#images {
+max-width:90%;
+margin:0 auto;
+padding-bottom:100px;
+}
+#images .im_inner{
+opacity:0;
+visibility:hidden;
+background:#EFEFEF;
+}
+
+.image {
+overflow:hidden;
+border-radius:8px;
+border:3px solid white;
+max-width:95%;
+margin:8px;
+}
+.image:hover{
+border-color:#6AAC6B;
+}
+#download{
+padding:10px 0;
+cursor:pointer;
+}
+.lb-number {
+display:none!important;
+}
+#loading{
+position:relative;
+width:100%;
+height:5px;
+border-bottom:1px solid #6AAC6B;
+overflow:hidden;
+background:white;
+}
+
+#loading .progress{
+width:100%;
+height:100%;
+}
+#loading .progress .inner{
+background:#6AAC6B;
+height:100%;
+width:0;
+}
+#submitform{
+position:relative;
+}
+#controls input[type=text]{
+border:none;
+width:90%;
+padding:5px;
+text-align:center;
+border:1px solid #6AAC6B;
+border-top:none;
+margin:0 auto;
+position:relative;
+display:block;
+color:#6AAC6B;
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+box-shadow: 0 5px 5px #ddd inset;
+z-index:1;
+}
+#front #controls input[type=text]{
+padding:8px;
+font-size:1.2em;
+}
+#controls input[type=text]:focus{
+box-shadow:none;
+
+}
+#controls input[type=submit]{
+border:none;
+padding:33px 5px 5px 5px;
+cursor:pointer;
+background:#6AAC6B;
+color:white;
+display:none;
+position:absolute;
+top:0;
+}
+#front #controls input[type=submit]{
+padding-top:42px;
+}
+#controls input[type=text]:valid + input{
+display:inline-block;
+}
+#pinfo {
+padding:10px 0 20px;
+text-align:center;
+max-width:90%;
+margin:0 auto;
+}
+#pinfo h1{
+margin:1em 0;
+line-height:1.5em;
+}
+#pinfo a{
+font-weight:bold;
+color:#6AAC6B;
+text-transform:uppercase;
+}
+#pinfo a:hover{
+color:#6AACA9;
+}
+#pinfo span{
+margin-left:15px;
+color:gray;
+line-height:1.5em;
+}
+#lightboxOverlay, #lightbox {
+top:0;
+z-index:1000000000;
+}
+
+#alpha{
+position:absolute;
+top:5px;
+right:5px;
+font-size:.6em;
+}
+#bottom{
+position:fixed;
+text-align:center;
+bottom:0;
+left:0;
+width:100%;
+height:80px;
+}
+#bottom .band{
+position:absolute;
+width:100%;
+height:35px;
+bottom:0;
+left:0;
+background:rgba(106,172,107,.5);
+border-top:2px solid #6AAC6B;
+}
+#bottom .inner{
+padding:10px;
+background:black;
+color:orange;
+display:inline-block;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+padding-bottom:80px;
+position:relative;
+bottom:5px;
+border:solid 2px white;
+}
+#front .home{
+visibility:hidden;
+}
+.home{
+position:relative;
+z-index:10;
+font-size:.85em;
+margin-top:15px;
+}
+
+#bottom a{
+text-decoration:none;
+color:white;
+}
+#bottom span, #bottom a{
+margin:0 5px;
+cursor:pointer;
+
+}
+#bottom span:hover, #bottom a:hover{
+color:#F5FFF5;
+}
+.blink {
+cursor:pointer;
+}
+#bottom .blink{
+font-size:1.5em;
+line-height:1.2em;
+padding:0 .25em;
+margin:0;
+}
+.lr{
+position:absolute;
+top:12px;
+font-size:2em;
+color:black;
+cursor:pointer;
+text-align:center;
+}
+.lr .tinner{
+top:3px;
+right:3px;
+left:3px;
+bottom:3px;
+background:white;
+width:16px;
+height:22px;
+}
+.lr .icon{
+position:absolute;
+top:-5px;
+right:-8px;
+}
+.lr.next{
+right:-40px;
+}
+
+.lr.prev{
+left:-40px;
+}
+
+
+.logo{
+font-family: 'pacificoregular';
+font-size:2em;
+padding-bottom:.5em;
+}
+#disqus_thread{
+margin-top:80px;
+}
+.small{
+font-size:.75em;
+}
+.small a{
+color:gray;
+text-decoration:none;
+}
+.help{
+font-size:1.2em;
+margin-left:10px;
+}
+.icon-angle-circled-right:before, [class^="icon-"]:before, [class*=" icon-"]:before {
+margin:0!important;
+padding:0!important;
+}
+.hlogo {
+display:inline-block;
+position:relative;
+z-index:10;
+}
+#remove {
+position:absolute;
+top:18px;
+width:100%;
+left:0;
+text-align:center;
+display:none;
+}
+.delete {
+text-decoration:underline;
+cursor:pointer;
+}
+.delete:hover{
+opacity:.85;
+}
+
+#menu {
+position:absolute;
+top:-40px;
+right:0;
+text-align:center;
+line-height:1.5em;
+z-index:20000000;
+color:white;
+}
+#menlogo{
+cursor:pointer;
+height:45px;
+font-size:1.3em;
+text-align:right;
+margin-right:40px;
+}
+#menclose {
+font-size:1.2em;
+color:white;
+position:absolute;
+bottom:5px;
+left:10px;
+cursor:pointer;
+display:none;
+}
+#menu a{
+text-decoration:none;
+color:white;
+}
+#menu li {
+padding:5px 0;
+border-top:1px solid gray;
+cursor:pointer;
+}
+#menu li.first{
+border-top:none;
+}
+#menu li:hover, #menu a:hover{
+color:#6AAC6B;
+}
+#usermenu {
+overflow:hidden;
+}
+#usermenu ul{
+padding:10px 20px 20px 20px;
+background:black;
+border-bottom-left-radius: 12px;
+}
+#validate #form{
+text-align:center;
+color:#6AAC6B;
+}
