@@ -48,9 +48,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title><?php print 'Imager | '.$title; ?></title>
 	<meta name="description" content="<?php print $locate->descrip; ?>">
-	<!--
-	<meta name="google-site-verification" content="UFVXeV2kNO7CZ_PFPdquBDa-g_We5j1fR-6vSafuhsM" />
-	-->
 	<link rel="icon" type="image/png" href="/favicon.png">
 	<!--
 	
